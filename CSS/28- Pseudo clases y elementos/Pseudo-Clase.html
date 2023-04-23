@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo clase</title>
+    <style>
+      .Menu{
+        background-color: #1bcfcf;
+      }
+
+      .Menu-Nav{
+        list-style: none;
+        font-size: 30px;
+      } 
+      
+      .Menu-Nav__Item{
+        display: inline-block;
+      }
+      
+      .Menu-Nav__Item a{
+        color: blue;
+        text-decoration: none;
+      }
+
+      /*Pseudo clases*/
+      .Menu-Nav__Item a:hover{
+        color: white;
+      }
+
+      .Menu-Nav__Item a:active{
+        color: blueviolet;
+      }
+
+      .Menu-Nav__Item a::after{
+        content: " | ";
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="Menu">
+        <ul class="Menu-Nav">
+          <li class="Menu-Nav__Item"><a href="">Inicio</a></li>
+          <li class="Menu-Nav__Item"><a href="">Trabajos</a></li>
+          <li class="Menu-Nav__Item"><a href="">Blog</a></li>
+          <li class="Menu-Nav__Item"><a href="">Contactos</a></li>
+          <li class="Menu-Nav__Item"><a href="">Nosotros</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <ul>
+          <li>Item</li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
