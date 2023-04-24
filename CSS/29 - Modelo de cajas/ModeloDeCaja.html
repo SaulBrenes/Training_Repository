@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo clase</title>
+    <style>
+      *{
+        box-sizing: border-box;
+        font-family: sans-serif;
+        padding: 0px;
+        margin: 0px;
+      }
+
+      .Menu{
+        background-color: #1bcfcf;
+        padding: 10px 0px
+      }
+
+      .Menu-Nav{
+        list-style: none;
+        padding-left: 5px;
+        margin: 0px;
+      } 
+      
+      .Menu-Nav__Item{
+        display: inline-block;
+      }
+      
+      .Menu-Nav__Item a{
+        color: blue;
+        text-decoration: none;
+      }
+
+      /*Pseudo clases*/
+      .Menu-Nav__Item a:hover{
+        color: white;
+      }
+
+      .Menu-Nav__Item a:active{
+        color: blueviolet;
+      }
+
+      .Menu-Nav__Item a::after{
+        content: " | ";
+      }
+
+      /*Modelo de cajas*/
+      main{
+        width: 100%;
+        height: 300px;
+        border: 10px solid black;
+        padding: 20px 85px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="Menu">
+        <ul class="Menu-Nav">
+          <li class="Menu-Nav__Item"><a href="">Inicio</a></li>
+          <li class="Menu-Nav__Item"><a href="">Trabajos</a></li>
+          <li class="Menu-Nav__Item"><a href="">Blog</a></li>
+          <li class="Menu-Nav__Item"><a href="">Contactos</a></li>
+          <li class="Menu-Nav__Item"><a href="">Nosotros</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h1>"El descubrimiento de la planta curativa en la selva amazónica y la lucha por su uso ético"</h1>
+        <div>
+          <p>
+            En las profundidades de la selva amazónica, 
+            un equipo de científicos descubrió una nueva 
+            especie de planta que parecía tener propiedades 
+            curativas increíbles. Después de años de 
+            investigación y pruebas rigurosas, se demostró 
+            que el extracto de la planta podía curar 
+            enfermedades que anteriormente se consideraban 
+            incurables. 
+          </p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
