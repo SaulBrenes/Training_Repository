@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de float</title>
+</head>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 15px;
+            font-family: Arial;
+        }
+
+        .main{
+            background: #71d867;
+            width: 90%;
+            margin: auto;
+            padding: 10px;
+            overflow: hidden;
+        }
+
+        .caja{
+            width: 500px;
+            height: 250px;
+            margin: 20px;
+        }
+
+        .img{
+            float: left;
+            width: auto;
+        }
+
+        .text{
+            float: left;
+        }
+
+        .articulo{
+            background: lightblue;
+            width: 500px;
+            margin: auto;
+            padding: 10px;
+        }
+
+        .articulo h2{
+            padding: 10px;
+            text-align: center;
+        }
+
+        .articulo img{
+            float: right
+        }
+
+    </style>
+<body>
+    <main class="main">
+        <div class="caja img">
+            <img src="https://loremflickr.com/g/320/240/paris" height="200">
+        </div>
+
+        <div class="caja text">
+            <h2>París y su historia</h2>
+            <p>
+                París, la ciudad del amor y la luz, es una de las ciudades 
+                más icónicas y románticas del mundo. Situada en el corazón 
+                de Francia, París es famosa por sus impresionantes monumentos,
+                su cocina deliciosa, sus museos de clase mundial y sus calles 
+                llenas de estilo. Desde la majestuosa Torre Eiffel hasta la 
+                impresionante Catedral de Notre Dame, París tiene algo para 
+                todos los gustos. Los bulevares bordeados de árboles, los 
+                jardines perfectamente cuidados y los cafés acogedores son 
+                solo algunos de los encantos que hacen que París sea una 
+                ciudad única en el mundo.
+            </p>
+        </div>
+    </main>
+
+    <article class="articulo">
+        <h2>Encabezado de artículo</h2>
+        <img src="https://loremflickr.com/g/320/240/paris" height="200">
+        <p>
+            París, la ciudad del amor y la luz, es una de las ciudades 
+            más icónicas y románticas del mundo. Situada en el corazón 
+            de Francia, París es famosa por sus impresionantes monumentos,
+            su cocina deliciosa, sus museos de clase mundial y sus calles 
+            llenas de estilo. Desde la majestuosa Torre Eiffel hasta la 
+            impresionante Catedral de Notre Dame, París tiene algo para 
+            todos los gustos. Los bulevares bordeados de árboles, los 
+            jardines perfectamente cuidados y los cafés acogedores son 
+            solo algunos de los encantos que hacen que París sea una 
+            ciudad única en el mundo.
+        </p>
+    </article>
+</body>
+</html>
