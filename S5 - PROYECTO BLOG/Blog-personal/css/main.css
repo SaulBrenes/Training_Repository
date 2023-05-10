@@ -16,6 +16,13 @@ body{
   font-size: 400;
 }
 
+.home-body{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
 /*Header*/
 .header{
   width: 100%;
@@ -29,4 +36,261 @@ body{
   width: 100%;
   height: 50px;
   display: grid;
+}
+
+.social-icons{
+  width: 250px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-self: end;
+  margin-right: 50px;
+}
+
+.social-icons a{
+  color: #ffff;
+  font-size: 28px;
+}
+
+.social-icons a:hover{
+  color: #616161;
+}
+
+.nav{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 90px;
+}
+
+.nav-logo{
+  width: 220px;
+  margin-top: 10px;
+  margin-left: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+}
+
+.nav-link{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 50px;
+}
+
+.nav-link a{
+  text-decoration: none;
+  color: black;
+  border-bottom: 1px solid black;
+
+}
+
+/*MAIN DEL HOME*/
+.home-main{
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  height: 100%;
+  background-image: url('../img/cover.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-container{
+  display: grid;
+  grid-column: 2;
+  justify-items: center;
+  height: 350px;
+  margin-top: 80px;
+}
+
+.main-container__text{
+  text-align: center;
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: 10px;
+  color: white;
+  height:fit-content;
+  width: auto;
+  background-color: #e6162e8a;
+}
+
+.main-container__link{
+  background-color: #e6162e;
+  display: inline-block;
+  padding: 5px 20px;
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  font-size: 28px;
+  height: 45px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.main-container__link:hover{
+  background-color: #db5161;
+}
+
+/*ESTILOS A LA PAGINA DE BLOG*/
+.blogs-main{
+  display: grid;
+}
+
+.news{
+  background-color: #e6e9ed;
+  padding: 10px 80px 40px;
+}
+
+.news-content{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 2fr;
+}
+
+.news-content img{
+  grid-column: 1;
+  width: 85%;
+  display: inline-block;
+  margin: 10px 0;
+}
+
+.news-info{
+  grid-column: 2;
+}
+
+.news-info h2{
+  margin-top: 20px;
+}
+
+.news-info p{
+  margin: 30px 0px;
+}
+
+/*boton de blogs*/
+.blogs-btn{
+  text-decoration: none;
+  background-color: #e6162e;
+  color: #ffff;
+  padding: 10px 15px;
+  font-size: 14px;
+  border-radius: 10px;
+}
+
+.blogs-btn:hover{
+  background-color:#ffff ;
+  border: 1px solid #e6162e;
+  color: #e6162e;
+}
+
+/*POSTS*/
+.posts{
+  padding: 0px 80px 40px;
+
+}
+
+.posts h3{
+  border-bottom: 1px solid #949aa1;
+  padding: 20px 0px;
+  text-align: center;
+  
+}
+
+.posts-blog{
+  display: inline-block;
+  padding: 15px;
+  max-width: 32%;
+  margin-bottom: 50px;
+}
+
+.posts-blog img{
+  width: 100%;
+}
+
+.posts-blog h4{
+  margin: 20px 0;
+}
+
+.posts-blog p{
+  margin-bottom: 35px;
+}
+
+/*Pie de pagina*/
+footer{
+  width: 100%;
+  height: 80px;
+  background-color: #e6162e;
+  color: white;
+  text-align: center;
+  display: grid;
+  grid-row: 1fr 1fr;
+}
+
+.derechos{
+ grid: 1;
+ background-color: black;
+}
+
+/*BLOG*/
+.main-blog{
+  padding: 0px 80px 40px;
+}
+
+.main-blog__content img{
+  display: inline-block;
+  padding: 0 50px 40px;
+  width: 100%;
+}
+
+.blog-content__article{
+  padding: 0px 80px 40px;
+}
+
+.blog-content__article h4{
+  border-bottom: 1px solid #616161;
+  padding: 20px 0px;
+}
+
+.blog-content__article h1{
+  margin: 20px 0;
+  font-size: 35px;
+}
+
+/*CONTACTO*/
+.section-contact{
+  width: 100%;
+  background-color: #e6e9ed;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 80px 50px;
+}
+
+.contact{
+  display: flex;
+  margin: 20px 0px 20px 20px;
+
+}
+
+.contact img{
+  width: 100px;
+  display: inline-block;
+  padding: 10px;
+}
+
+.contact-info{
+  padding: 20px 0 ;
+  width: 300px;
+}
+
+.contact-info a{
+  text-decoration: none;
+  color: black;
+  border-bottom: 1px solid black;
+  padding-bottom: 5px;
+}
+
+.contact-info p{
+  margin-top: 10px;
 }
