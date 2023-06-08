@@ -1,0 +1,11 @@
+let a = 4;
+let b = 5;
+console.log("Valor de a:", a);
+console.log("Valor de b:", b);
+console.log("Operaciones de a ? b");
+console.log("SUMA: ", a + b);
+console.log("RESTA: ", a - b);
+console.log("MULTIPLICACIÓN:", a * b);
+console.log("DIVISIÓN:", a / b);
+console.log("MODULO:", a % b);
+console.log("POTENCIA:", a ** b);
